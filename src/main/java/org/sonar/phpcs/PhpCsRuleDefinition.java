@@ -6,6 +6,8 @@ import org.sonarsource.analyzer.commons.ExternalRuleLoader;
 import static org.sonar.phpcs.PhpCsSensor.PHPCS_REPORT_KEY;
 import static org.sonar.phpcs.PhpCsSensor.PHPCS_REPORT_NAME;
 
+import javax.annotation.Nonnull;
+
 public class PhpCsRuleDefinition implements RulesDefinition {
 
     private static final String RULES_JSON = "org/sonar/phpcs/rules.json";
@@ -18,7 +20,7 @@ public class PhpCsRuleDefinition implements RulesDefinition {
     );
 
     @Override
-    public void define(Context context) {
+    public void define(@Nonnull Context context) {
         RULE_LOADER.createExternalRuleRepository(context);
     }
 }

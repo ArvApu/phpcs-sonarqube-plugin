@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import javax.annotation.CheckForNull;
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.batch.rule.Severity;
@@ -34,8 +35,7 @@ public abstract class ExternalIssuesSensor implements Sensor {
     public final String defaultRuleId = reportKey() + ".finding";
     protected final Set<String> unresolvedInputFiles = new LinkedHashSet<>();
 
-    protected ExternalIssuesSensor() {
-    }
+    protected ExternalIssuesSensor() {}
 
     @Override
     public void describe(SensorDescriptor descriptor) {
@@ -46,7 +46,7 @@ public abstract class ExternalIssuesSensor implements Sensor {
     }
 
     @Override
-    public void execute(SensorContext context) {
+    public void execute(@Nonnull SensorContext context) {
         List<File> reportFiles = ExternalReportProvider.getReportFiles(context, reportPathKey());
         reportFiles.forEach(report -> {
             unresolvedInputFiles.clear();
@@ -74,7 +74,6 @@ public abstract class ExternalIssuesSensor implements Sensor {
         String msg = String.format("Failed to resolve %s file path(s) in %s %s report. No issues imported related to file(s): %s",
                 unresolvedInputFiles.size(), reportName(), reportPath.getName(), fileList);
         logger().warn(msg);
-        // analysisWarningsWrapper.addWarning(msg); // TODO REMOVE
     }
 
     private void logFileCantBeRead(Exception e, File reportPath) {
@@ -87,7 +86,6 @@ public abstract class ExternalIssuesSensor implements Sensor {
 
         String msg = String.format(READ_ERROR_MSG_FORMAT, reportPath, additionalMsg);
         logger().error(msg);
-        // analysisWarningsWrapper.addWarning(msg); // TODO REMOVE
     }
 
     private static boolean isEmpty(@Nullable String str) {

@@ -42,7 +42,7 @@ public class PhpCsJsonReportReader extends JsonReportReader {
     }
 
     /**
-     * Here we map phpcs message to and a sonarqube issue
+     * Here we map phpcs message to a sonarqube issue
      */
     private void onMessage(String file, JSONObject message) {
         Issue issue = new Issue();
