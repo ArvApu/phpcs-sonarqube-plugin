@@ -1,8 +1,7 @@
-package arvapu.sonar.phpcs;
+package arvapu.sonar.phpcs.extension;
 
 import org.sonar.api.config.PropertyDefinition;
 
-import java.util.Collections;
 import java.util.List;
 
 public class PhpcsProperties {
@@ -14,10 +13,10 @@ public class PhpcsProperties {
     }
 
     public static List<PropertyDefinition> getProperties() {
-        return Collections.singletonList(
+        return List.of(
             PropertyDefinition.builder(REPORT_PATH_KEY)
                 .name("PHPCS Report Path")
-                .description("Path to the PHPCS JSON report file")
+                .description("Path to the generated PHPCS JSON report file")
                 .defaultValue(REPORT_PATH_DEFAULT)
                 .build()
         );
