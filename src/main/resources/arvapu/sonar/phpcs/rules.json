@@ -1,0 +1,583 @@
+[
+  {
+    "key": "phpcs.default",
+    "name": "General Rule Violation",
+    "type": "CODE_SMELL",
+    "severity": "MAJOR",
+    "description": "A coding standard violation was detected by PHP_CodeSniffer but the specific rule is not defined in this plugin. The rule source will be included in the issue message."
+  },
+  {
+    "key": "PSR12.Classes.AnonClassDeclaration.CloseBraceSameLine",
+    "name": "Anonymous class closing brace must be on a line by itself",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The closing brace of an anonymous class must be on a line by itself."
+  },
+  {
+    "key": "PSR12.Classes.AnonClassDeclaration.SpaceAfterKeyword",
+    "name": "Anonymous class declaration spacing",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be a single space after the class keyword in anonymous class declarations."
+  },
+  {
+    "key": "PSR12.Classes.ClassInstantiation.MissingParentheses",
+    "name": "Class instantiation must use parentheses",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "When instantiating a class, parentheses must always be present even when there are no arguments."
+  },
+  {
+    "key": "PSR12.Classes.ClosingBrace.StatementAfter",
+    "name": "Class closing brace must be on a line by itself",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The closing brace of a class must be on a line by itself and must not be followed by any comment or statement on the same line."
+  },
+  {
+    "key": "PSR12.Classes.OpeningBraceSpace.Found",
+    "name": "No space before class opening brace",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space before the opening brace of a class."
+  },
+  {
+    "key": "PSR12.ControlStructures.BooleanOperatorPlacement.FoundMixed",
+    "name": "Boolean operators must be consistently placed",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Boolean operators between conditions must be at the beginning or end of the line, but not mixed."
+  },
+  {
+    "key": "PSR12.ControlStructures.ControlStructureSpacing.CloseParenthesisLine",
+    "name": "Control structure closing parenthesis placement",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The closing parenthesis of a multi-line control structure must be on its own line."
+  },
+  {
+    "key": "PSR12.ControlStructures.ControlStructureSpacing.FirstExpressionLine",
+    "name": "Control structure first expression placement",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The first expression in a multi-line control structure must be on the next line after the opening parenthesis."
+  },
+  {
+    "key": "PSR12.ControlStructures.ControlStructureSpacing.LineIndent",
+    "name": "Control structure line indentation",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Lines in multi-line control structures must be indented correctly."
+  },
+  {
+    "key": "PSR12.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace",
+    "name": "Control structure opening brace spacing",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no blank lines after the opening brace of a control structure."
+  },
+  {
+    "key": "PSR12.Files.DeclareStatement.SpaceFoundAfterDirective",
+    "name": "Declare statement directive spacing",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space after the directive in a declare statement."
+  },
+  {
+    "key": "PSR12.Files.FileHeader.HeaderPosition",
+    "name": "File header position",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The file-level docblock must be on the line immediately following the opening PHP tag."
+  },
+  {
+    "key": "PSR12.Files.FileHeader.IncorrectOrder",
+    "name": "File header incorrect order",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The file-level blocks must be in the correct order: opening tag, file docblock, declare statements, namespace, use statements."
+  },
+  {
+    "key": "PSR12.Files.FileHeader.SpacingAfterBlock",
+    "name": "File header block spacing",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be one blank line after a file-level block."
+  },
+  {
+    "key": "PSR12.Files.ImportStatement.LeadingSlash",
+    "name": "Import statement must not have leading backslash",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Import statements (use) must not begin with a leading backslash."
+  },
+  {
+    "key": "PSR12.Files.OpenTag.NotAlone",
+    "name": "Opening PHP tag must be on its own line",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The opening PHP tag must be on a line by itself when used in a file containing only PHP."
+  },
+  {
+    "key": "PSR12.Functions.NullableTypeDeclaration.SpaceAfterQuestionMark",
+    "name": "Nullable type declaration spacing after question mark",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space after the question mark in a nullable type declaration."
+  },
+  {
+    "key": "PSR12.Functions.NullableTypeDeclaration.SpaceBeforeQuestionMark",
+    "name": "Nullable type declaration spacing before question mark",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space before the question mark in a nullable type declaration."
+  },
+  {
+    "key": "PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeColon",
+    "name": "Return type declaration spacing before colon",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space before the colon in a return type declaration."
+  },
+  {
+    "key": "PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeReturnType",
+    "name": "Return type declaration spacing after colon",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be exactly one space between the colon and the type in a return type declaration."
+  },
+  {
+    "key": "PSR12.Keywords.ShortFormTypeKeywords.LongForm",
+    "name": "Use short form of type keywords",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Short form of type keywords (bool, int) must be used instead of long form (boolean, integer)."
+  },
+  {
+    "key": "PSR12.Namespaces.CompoundNamespaceDepth.TooDeep",
+    "name": "Compound namespace depth limit",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Compound namespaces with a depth of more than two levels must not be used."
+  },
+  {
+    "key": "PSR12.Operators.OperatorSpacing.NoSpaceAfter",
+    "name": "Operator spacing after",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be at least one space after an operator."
+  },
+  {
+    "key": "PSR12.Operators.OperatorSpacing.NoSpaceBefore",
+    "name": "Operator spacing before",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be at least one space before an operator."
+  },
+  {
+    "key": "PSR12.Properties.ConstantVisibility.NotFound",
+    "name": "Class constant visibility required",
+    "type": "CODE_SMELL",
+    "severity": "MAJOR",
+    "description": "Class constants must have visibility declarations."
+  },
+  {
+    "key": "PSR12.Traits.UseDeclaration.MultipleImport",
+    "name": "One trait import per use declaration",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Each trait import must be in its own use statement."
+  },
+  {
+    "key": "PSR12.Traits.UseDeclaration.UseAfterBrace",
+    "name": "Trait use declaration placement",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Trait use declarations must be placed right after the opening brace of a class."
+  },
+  {
+    "key": "Generic.Files.LineLength.TooLong",
+    "name": "Line length limit exceeded",
+    "type": "CODE_SMELL",
+    "severity": "INFO",
+    "description": "Lines should not exceed 120 characters; soft limit is 80 characters."
+  },
+  {
+    "key": "Generic.WhiteSpace.DisallowTabIndent.TabsUsed",
+    "name": "Tabs must not be used for indentation",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Spaces must be used for indentation, not tabs."
+  },
+  {
+    "key": "PSR2.Classes.ClassDeclaration.ExtendsLine",
+    "name": "Class extends keyword placement",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The extends keyword must be on the same line as the class name."
+  },
+  {
+    "key": "PSR2.Classes.ClassDeclaration.ImplementsLine",
+    "name": "Class implements keyword placement",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The implements keyword must be on the same line as the class name or extends clause."
+  },
+  {
+    "key": "PSR2.Classes.ClassDeclaration.OpenBraceNewLine",
+    "name": "Class opening brace must be on new line",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The opening brace for a class must be on the line after the definition."
+  },
+  {
+    "key": "PSR2.Classes.PropertyDeclaration.Multiple",
+    "name": "One property per declaration",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Each property must be declared on its own line."
+  },
+  {
+    "key": "PSR2.Classes.PropertyDeclaration.Underscore",
+    "name": "Property names must not be prefixed with underscore",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Property names should not be prefixed with an underscore to indicate visibility."
+  },
+  {
+    "key": "PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace",
+    "name": "No blank line after control structure opening brace",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no blank line after the opening brace of a control structure."
+  },
+  {
+    "key": "PSR2.ControlStructures.ElseIfDeclaration.NotAllowed",
+    "name": "Use elseif instead of else if",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The keyword elseif should be used instead of else if."
+  },
+  {
+    "key": "PSR2.ControlStructures.SwitchDeclaration.BreakIndent",
+    "name": "Switch case break statement indentation",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Break statements in switch cases must be indented to the same level as the case body."
+  },
+  {
+    "key": "PSR2.Files.ClosingTag.NotAllowed",
+    "name": "Closing PHP tag not allowed",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Files containing only PHP code must not have a closing PHP tag."
+  },
+  {
+    "key": "PSR2.Files.EndFileNewline.NoneFound",
+    "name": "File must end with newline",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "All PHP files must end with a single blank line."
+  },
+  {
+    "key": "PSR2.Methods.FunctionCallSignature.SpaceAfterCloseBracket",
+    "name": "Function call spacing after closing bracket",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space after the closing parenthesis of a function call."
+  },
+  {
+    "key": "PSR2.Methods.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "name": "Function call spacing before closing bracket",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space before the closing parenthesis of a function call."
+  },
+  {
+    "key": "PSR2.Methods.FunctionCallSignature.SpaceBeforeOpenBracket",
+    "name": "Function call spacing before opening bracket",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space between the function name and the opening parenthesis."
+  },
+  {
+    "key": "PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose",
+    "name": "Function closing brace spacing",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no blank line before the closing brace of a function."
+  },
+  {
+    "key": "PSR2.Methods.MethodDeclaration.Underscore",
+    "name": "Method names must not be prefixed with underscore",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Method names should not be prefixed with an underscore to indicate visibility."
+  },
+  {
+    "key": "PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter",
+    "name": "Blank line required after namespace declaration",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be one blank line after the namespace declaration."
+  },
+  {
+    "key": "PSR2.Namespaces.UseDeclaration.MultipleDeclarations",
+    "name": "One use declaration per statement",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Each use declaration must be on its own line."
+  },
+  {
+    "key": "PSR2.Namespaces.UseDeclaration.SpaceAfterLastUse",
+    "name": "Blank line required after use declarations",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be one blank line after the last use statement."
+  },
+  {
+    "key": "Squiz.Classes.ValidClassName.NotCamelCaps",
+    "name": "Class name must be in PascalCase",
+    "type": "CODE_SMELL",
+    "severity": "MAJOR",
+    "description": "Class names must be declared in PascalCase (StudlyCaps)."
+  },
+  {
+    "key": "Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace",
+    "name": "Control structure spacing after closing brace",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be a single space after the closing brace of a control structure."
+  },
+  {
+    "key": "Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword",
+    "name": "Control structure spacing after keyword",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be a single space after control structure keywords."
+  },
+  {
+    "key": "Squiz.Functions.FunctionDeclaration.BraceOnSameLine",
+    "name": "Function opening brace on new line",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The opening brace of a function must be on a new line."
+  },
+  {
+    "key": "Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine",
+    "name": "Multi-line function opening brace placement",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The opening brace of a multi-line function must be on a new line."
+  },
+  {
+    "key": "Squiz.Scope.MethodScope.Missing",
+    "name": "Method visibility declaration required",
+    "type": "CODE_SMELL",
+    "severity": "MAJOR",
+    "description": "All methods must have a visibility declaration (public, protected, or private)."
+  },
+  {
+    "key": "Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen",
+    "name": "Control structure spacing after opening parenthesis",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space after the opening parenthesis of a control structure."
+  },
+  {
+    "key": "Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose",
+    "name": "Control structure spacing before closing parenthesis",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space before the closing parenthesis of a control structure."
+  },
+  {
+    "key": "Squiz.WhiteSpace.ScopeKeywordSpacing.Incorrect",
+    "name": "Scope keyword spacing",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be a single space after scope keywords (public, protected, private, static, abstract, final)."
+  },
+  {
+    "key": "Squiz.WhiteSpace.SuperfluousWhitespace.EndLine",
+    "name": "No trailing whitespace",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Lines must not have trailing whitespace."
+  },
+  {
+    "key": "Generic.Metrics.CyclomaticComplexity.MaxExceeded",
+    "name": "Cyclomatic complexity limit exceeded",
+    "type": "CODE_SMELL",
+    "severity": "MAJOR",
+    "description": "The cyclomatic complexity of this code exceeds the configured maximum."
+  },
+  {
+    "key": "Generic.Metrics.CyclomaticComplexity.TooHigh",
+    "name": "Cyclomatic complexity too high",
+    "type": "CODE_SMELL",
+    "severity": "MAJOR",
+    "description": "The cyclomatic complexity of this code is higher than recommended."
+  },
+  {
+    "key": "Generic.ControlStructures.DisallowYodaConditions.Found",
+    "name": "Yoda conditions are not allowed",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Yoda conditions (where the constant is on the left side of the comparison) are not allowed."
+  },
+  {
+    "key": "PSR12.Traits.UseDeclaration.NotGrouped",
+    "name": "Trait use declarations must not be grouped",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Trait use declarations must not be grouped in a single statement."
+  },
+  {
+    "key": "Squiz.Commenting.PostStatementComment.Found",
+    "name": "Post-statement comment found",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Comments should not be placed on the same line as statements."
+  },
+  {
+    "key": "Squiz.Commenting.PostStatementComment.AnnotationFound",
+    "name": "Post-statement annotation comment found",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Annotation comments should not be placed on the same line as statements."
+  },
+  {
+    "key": "Squiz.Arrays.ArrayDeclaration.NoComma",
+    "name": "Missing comma in array declaration",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Each item in a multi-line array declaration must be followed by a comma."
+  },
+  {
+    "key": "PSR2.Methods.FunctionCallSignature.Indent",
+    "name": "Function call argument indentation",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Arguments in multi-line function calls must be indented correctly."
+  },
+  {
+    "key": "PSR2.Methods.FunctionCallSignature.MultipleArguments",
+    "name": "Multiple arguments in function call",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Each argument in a multi-line function call must be on its own line."
+  },
+  {
+    "key": "Generic.Formatting.SpaceAfterCast.NoSpace",
+    "name": "No space after cast",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no space between a cast and the variable."
+  },
+  {
+    "key": "PSR2.Classes.PropertyDeclaration.ScopeMissing",
+    "name": "Property visibility declaration missing",
+    "type": "CODE_SMELL",
+    "severity": "MAJOR",
+    "description": "Properties must have a visibility declaration (public, protected, or private)."
+  },
+  {
+    "key": "Generic.WhiteSpace.ScopeIndent.IncorrectExact",
+    "name": "Incorrect scope indentation",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Indentation inside scopes does not match the expected level."
+  },
+  {
+    "key": "Squiz.ControlStructures.ForEachLoopDeclaration.SpacingBeforeAs",
+    "name": "Spacing before 'as' in foreach loop",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be a single space before the 'as' keyword in foreach loops."
+  },
+  {
+    "key": "PSR2.Methods.FunctionCallSignature.CloseBracketLine",
+    "name": "Function call closing bracket line",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The closing parenthesis of a multi-line function call must be on a new line."
+  },
+  {
+    "key": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+    "name": "Incorrect scope indentation",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Indentation inside scopes does not match the expected level."
+  },
+  {
+    "key": "Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore",
+    "name": "Content before scope closing brace",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "No content is allowed before a scope closing brace."
+  },
+  {
+    "key": "Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace",
+    "name": "Newline before function opening brace",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "A newline is required before the opening brace of a multi-line function declaration."
+  },
+  {
+    "key": "PSR2.Classes.ClassDeclaration.CloseBraceAfterBody",
+    "name": "Class closing brace after body",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "The closing brace of a class must be on a new line after the class body."
+  },
+  {
+    "key": "PSR12.Traits.UseDeclaration.NoBlankLineAfterUse",
+    "name": "No blank line after trait use declaration",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no blank line after a trait use declaration."
+  },
+  {
+    "key": "Generic.Functions.FunctionCallArgumentSpacing",
+    "name": "Function call argument spacing",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Arguments in function calls must be properly spaced."
+  },
+  {
+    "key": "Squiz.Functions.MultiLineFunctionDeclaration",
+    "name": "Multi-line function declaration formatting",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "Multi-line function declarations must follow formatting rules."
+  },
+  {
+    "key": "PSR1.Files.SideEffects.FoundWithSymbols",
+    "name": "Side effects with symbols found",
+    "type": "CODE_SMELL",
+    "severity": "MAJOR",
+    "description": "A file that declares new symbols (classes, functions, etc.) must not cause side effects."
+  },
+  {
+    "key": "PSR1.Methods.CamelCapsMethodName.NotCamelCaps",
+    "name": "Method name not in camelCaps",
+    "type": "CODE_SMELL",
+    "severity": "MAJOR",
+    "description": "Method names must be declared in camelCaps."
+  },
+  {
+    "key": "Generic.PHP.DeprecatedFunctions.Deprecated",
+    "name": "Deprecated function used",
+    "type": "CODE_SMELL",
+    "severity": "MAJOR",
+    "description": "Deprecated PHP functions must not be used."
+  },
+  {
+    "key": "PSR2.Methods.FunctionCallSignature.EmptyLine",
+    "name": "Empty line in function call signature",
+    "type": "CODE_SMELL",
+    "severity": "MINOR",
+    "description": "There must be no empty lines within a function call signature."
+  }
+]
