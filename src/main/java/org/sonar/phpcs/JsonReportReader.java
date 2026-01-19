@@ -1,6 +1,7 @@
 package org.sonar.phpcs;
 
 import javax.annotation.Nullable;
+
 import org.sonarsource.analyzer.commons.internal.json.simple.parser.JSONParser;
 
 public abstract class JsonReportReader {

@@ -8,7 +8,7 @@ Here are the steps:
 1. Download and install PHPCS on the machine or project running the SonarQube analysis
 2. Get sonar-phpcs-plugin _jar_ file: 
    * Download from [release](https://github.com/ArvApu/phpcs-sonarqube-plugin/releases/new)
-   * Or compile manually ([Maven](https://maven.apache.org/) and at least [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) is required):
+   * Or compile manually ([Maven](https://maven.apache.org/) and at least [JDK 23](https://www.oracle.com/java/technologies/javase/jdk23-archive-downloads.html) is required):
      1. Clone project
      2. Run `mvn verify`
      3. Compiled _jar_ file should be in __target__ directory
