@@ -1,9 +1,9 @@
 [
   {
     "key": "phpcs.default",
-    "name": "General Rule Violation",
+    "name": "PHPCS Rule Violation",
     "type": "CODE_SMELL",
-    "severity": "MAJOR",
+    "severity": "MINOR",
     "description": "A coding standard violation was detected by PHP_CodeSniffer but the specific rule is not defined in this plugin. The rule source will be included in the issue message."
   },
   {

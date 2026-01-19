@@ -7,19 +7,19 @@ import arvapu.sonar.phpcs.extension.sensor.InputFileLocator;
 import arvapu.sonar.phpcs.extension.sensor.IssueImporter;
 import arvapu.sonar.phpcs.extension.sensor.IssueParser;
 import arvapu.sonar.phpcs.extension.sensor.UnresolvedInputFileLogger;
-import com.google.gson.Gson;
 import org.sonar.api.Plugin;
 
 public class PhpcsPlugin implements Plugin {
     @Override
     public void define(Context context) {
         context.addExtensions(
+            // Server-side extensions
             PhpcsRulesDefinition.class,
-            PhpcsSensor.class,
             PhpcsProperties.class,
+            // Scanner-side extensions (must be annotated with @ScannerSide)
+            PhpcsSensor.class,
             IssueParser.class,
             IssueImporter.class,
-            Gson.class,
             InputFileLocator.class,
             UnresolvedInputFileLogger.class
         );

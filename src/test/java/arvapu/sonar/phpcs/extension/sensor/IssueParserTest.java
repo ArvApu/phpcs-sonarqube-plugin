@@ -33,7 +33,7 @@ class IssueParserTest {
         }
         """;
         File file = this.createTempJsonFile(json);
-        IssueParser parser = new IssueParser(new Gson());
+        IssueParser parser = new IssueParser();
         List<Issue> issues = parser.parse(file);
 
         assertEquals(1, issues.size());
@@ -53,7 +53,7 @@ class IssueParserTest {
         }
         """;
         File file = this.createTempJsonFile(json);
-        IssueParser parser = new IssueParser(new Gson());
+        IssueParser parser = new IssueParser();
         List<Issue> issues = parser.parse(file);
 
         assertTrue(issues.isEmpty());
@@ -71,7 +71,7 @@ class IssueParserTest {
         }
         """;
         File file = this.createTempJsonFile(json);
-        IssueParser parser = new IssueParser(new Gson());
+        IssueParser parser = new IssueParser();
         List<Issue> issues = parser.parse(file);
 
         assertTrue(issues.isEmpty());
@@ -81,7 +81,7 @@ class IssueParserTest {
     public void throwsExceptionOnInvalidJson() throws IOException {
         String json = "not a json";
         File file = this.createTempJsonFile(json);
-        IssueParser parser = new IssueParser(new Gson());
+        IssueParser parser = new IssueParser();
 
         assertThrows(Exception.class, () -> parser.parse(file));
     }

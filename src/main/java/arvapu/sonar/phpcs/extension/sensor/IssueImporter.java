@@ -10,12 +10,14 @@ import org.sonar.api.batch.rule.Severity;
 import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.sensor.issue.NewExternalIssue;
 import org.sonar.api.rules.RuleType;
+import org.sonar.api.scanner.ScannerSide;
 
 import javax.annotation.Nullable;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
+@ScannerSide
 public class IssueImporter {
     private static final Logger LOG = LoggerFactory.getLogger(IssueImporter.class);
     private static final String FALLBACK_RULE_KEY = "phpcs.default";

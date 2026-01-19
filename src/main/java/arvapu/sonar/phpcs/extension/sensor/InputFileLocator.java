@@ -2,9 +2,11 @@ package arvapu.sonar.phpcs.extension.sensor;
 
 import org.sonar.api.batch.fs.FileSystem;
 import org.sonar.api.batch.fs.InputFile;
+import org.sonar.api.scanner.ScannerSide;
 
 import java.nio.file.Paths;
 
+@ScannerSide
 public class InputFileLocator {
 
     public InputFile findInputFile(FileSystem fileSystem, String filePath) {

@@ -3,11 +3,13 @@ package arvapu.sonar.phpcs.extension.sensor;
 import arvapu.sonar.phpcs.extension.PhpcsRulesDefinition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.sonar.api.scanner.ScannerSide;
 
 import java.io.File;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@ScannerSide
 public class UnresolvedInputFileLogger {
     private static final Logger LOG = LoggerFactory.getLogger(UnresolvedInputFileLogger.class);
     private static final int MAX_LOGGED_FILE_NAMES = 5;

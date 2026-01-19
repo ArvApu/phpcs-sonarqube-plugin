@@ -6,6 +6,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.sonar.api.scanner.ScannerSide;
 
 import java.io.File;
 import java.io.FileReader;
@@ -13,13 +14,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@ScannerSide
 public class IssueParser {
     private static final Logger LOG = LoggerFactory.getLogger(IssueParser.class);
 
     private final Gson gson;
 
-    public IssueParser(Gson gson) {
-        this.gson = gson;
+    public IssueParser() {
+        // Not going to deal with third party DI at the moment
+        this.gson = new Gson();
     }
 
     public List<Issue> parse(File reportFile) throws IOException {
