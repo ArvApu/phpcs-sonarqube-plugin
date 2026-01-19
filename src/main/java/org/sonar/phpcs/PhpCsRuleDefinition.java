@@ -13,10 +13,11 @@ public class PhpCsRuleDefinition implements RulesDefinition {
     private static final String RULES_JSON = "org/sonar/phpcs/rules.json";
 
     static final ExternalRuleLoader RULE_LOADER = new ExternalRuleLoader(
-            PHPCS_REPORT_KEY,
-            PHPCS_REPORT_NAME,
-            RULES_JSON,
-            "php"
+        PHPCS_REPORT_KEY,
+        PHPCS_REPORT_NAME,
+        RULES_JSON,
+        "php",
+        null
     );
 
     @Override

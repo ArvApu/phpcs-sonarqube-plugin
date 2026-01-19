@@ -10,6 +10,8 @@ import java.util.stream.Collectors;
 import javax.annotation.CheckForNull;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+
+import org.slf4j.Logger;
 import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.batch.rule.Severity;
 import org.sonar.api.batch.sensor.Sensor;
@@ -19,7 +21,6 @@ import org.sonar.api.batch.sensor.issue.NewExternalIssue;
 import org.sonar.api.batch.sensor.issue.NewIssueLocation;
 import org.sonar.api.config.Configuration;
 import org.sonar.api.rules.RuleType;
-import org.sonar.api.utils.log.Logger;
 import org.sonarsource.analyzer.commons.ExternalReportProvider;
 import org.sonarsource.analyzer.commons.ExternalRuleLoader;
 import org.sonarsource.analyzer.commons.internal.json.simple.parser.ParseException;
@@ -89,7 +90,7 @@ public abstract class ExternalIssuesSensor implements Sensor {
     }
 
     private static boolean isEmpty(@Nullable String str) {
-        return str == null || str.trim().length() == 0;
+        return str == null || str.trim().isEmpty();
     }
 
     @CheckForNull
