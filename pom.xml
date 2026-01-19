@@ -8,7 +8,7 @@
 
     <groupId>arvapu.sonar.phpcs</groupId>
     <artifactId>sonar-phpcs-plugin</artifactId>
-    <version>2.0.0</version>
+    <version>2.1.0</version>
     <!-- this is important for sonar-packaging-maven-plugin -->
     <packaging>sonar-plugin</packaging>
 
@@ -37,6 +37,12 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.10.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
